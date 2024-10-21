@@ -1,65 +1,55 @@
-# fortrant README
+# Fortrant | Fortran Support Plugin
 
-This is the README for your extension "fortrant". After writing up a brief description, we recommend including the following sections.
+<img 
+    src="https://github.com/IsMoreiraKt/fortrant/blob/main/resources/icons/fortran-icon.png" 
+    alt="project-logo" 
+    width="300px" 
+    align="right"
+/>
+
+<p align="center">
+    <a href="https://github.com/IsMoreiraKt/fortrant">Repository</a> |
+    <a href="https://github.com/IsMoreiraKt/fortrant/issues">Issues</a>
+</p>
+
+Fortrant is a Visual Studio Code extension for Fortran, designed to enhance the development experience for Fortran programmers. It provides syntax highlighting, support for various Fortran file extensions, and an improved coding environment.
+
 
 ## Features
+- **Syntax Highlighting**: Custom syntax highlighting for Fortran keywords, operators, constants, and data types.
+- **File Extension Support**: Compatible with the following Fortran file extensions:
+  - `.f`
+  - `.for`
+  - `.f90`
+  - `.f95`
+  - `.f03`
+  - `.f08`
+  - `.f2018`
+  - `.p`
+  - `.include`
+- **Icon Support**: Displays a custom icon for Fortran files in the VSCode file explorer.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
+1. Open Visual Studio Code.
+2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
+3. Search for "Fortrant" in the marketplace.
+4. Click the Install button.
 
-\!\[feature X\]\(images/feature-x.png\)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Usage
+Once installed, open any Fortran file in VSCode to see syntax highlighting and the custom icon in the file explorer. 
 
-## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Changelog
+For the latest updates and changes, check the [Changelog](https://github.com/IsMoreiraKt/fortrant/blob/main/CHANGELOG.md).
 
-## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## Upcoming Features
+- Integration with additional Fortran standards and keywords.
+- Improved snippet support for common Fortran constructs.
+- Enhanced debugging capabilities for Fortran code.
 
-For example:
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+## License
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/IsMoreiraKt/fortrant/blob/main/LICENSE) file for details.

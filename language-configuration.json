@@ -1,30 +1,65 @@
 {
-    "comments": {
-        // symbol used for single line comment. Remove this entry if your language does not support line comments
-        "lineComment": "//",
-        // symbols used for start and end a block comment. Remove this entry if your language does not support block comments
-        "blockComment": [ "/*", "*/" ]
+  "comments": {
+    "blockComment": [],
+    "lineComment": "!"
+  },
+
+  "autoCloseBefore": ";:.,=}])> \n\t",
+  "autoClosingPairs": [
+    [ "(", ")" ],
+    [ "[", "]" ],
+    [ "{", "}" ]
+  ],
+
+  "brackets": [
+    [ "(", ")" ],
+    [ "[", "]" ],
+    [ "{", "}" ]
+  ],
+  "colorizedBracketPairs": [
+    [ "(", ")" ],
+    [ "[", "]" ],
+    [ "{", "}" ]
+  ],
+
+  "folding": {
+    "markers": {
+      "start": "^[!]*\\s*\\<\\s*region\b",
+      "end": "^[!]*\\s*\\<\\s*end region\b"
     },
-    // symbols used as brackets
-    "brackets": [
-        ["{", "}"],
-        ["[", "]"],
-        ["(", ")"]
-    ],
-    // symbols that are auto closed when typing
-    "autoClosingPairs": [
-        ["{", "}"],
-        ["[", "]"],
-        ["(", ")"],
-        ["\"", "\""],
-        ["'", "'"]
-    ],
-    // symbols that can be used to surround a selection
-    "surroundingPairs": [
-        ["{", "}"],
-        ["[", "]"],
-        ["(", ")"],
-        ["\"", "\""],
-        ["'", "'"]
-    ]
+
+    "offSide": true
+  },
+
+  "indentationRules": {
+    "increaseIndentPattern": "^(\\s*if\\s*|\\s*do\\s*|\\s*subroutine\\s*|\\s*function\\s*|\\s*module\\s*)",
+    "decreaseIndentPattern": "^\\s*end\\s*",
+    "indentNextLinePattern": "^(\\s*(if|do|subroutine|function|module)\\s*\\(|\\s*where\\s*\\()",
+    "unIndentedLinePattern": "^\\s*end\\s*",
+  },
+
+  "onEnterRules": [
+    {
+      "beforeText": "^\\s*$",
+      "action": { "indent": "none" }
+    },
+    {
+      "beforeText": "\\s*if\\s*\\(|[^\n]*$",
+      "afterText": "\\s*$",
+      "action": { "indent": "indent" }
+    },
+    {
+      "beforeText": "\\s*do\\s*\\(|[^\n]*$",
+      "afterText": "\\s*$",
+      "action": { "indent": "indent" }
+    }
+  ],
+
+  "surroundingPairs": [
+    [ "(", ")" ],
+    [ "[", "]" ],
+    [ "{", "}" ]
+  ],
+
+  "wordPattern": "\\w+"
 }

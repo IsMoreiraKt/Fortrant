@@ -1,7 +1,7 @@
 # Fortrant | Fortran Support Plugin
 
 <img 
-    src="https://github.com/IsMoreiraKt/fortrant/blob/main/resources/icons/fortran-icon.png" 
+    src="./resources/icons/fortran-icon.png" 
     alt="project-logo" 
     width="300px" 
     align="right"
@@ -28,6 +28,7 @@ Fortrant is a Visual Studio Code extension for Fortran, designed to enhance the 
   - `.p`
   - `.include`
 - **Icon Support**: Displays a custom icon for Fortran files in the VSCode file explorer.
+- **Snippet Support**: Added snippets for common Fortran constructs to improve coding efficiency.
 
 
 ## Installation
@@ -38,7 +39,7 @@ Fortrant is a Visual Studio Code extension for Fortran, designed to enhance the 
 
 
 ## Usage
-Once installed, open any Fortran file in VSCode to see syntax highlighting and the custom icon in the file explorer. 
+Once installed, open any Fortran file in VSCode to see syntax highlighting, snippet support, and the custom icon in the file explorer.
 
 
 ## Changelog
@@ -47,7 +48,7 @@ For the latest updates and changes, check the [Changelog](https://github.com/IsM
 
 ## Upcoming Features
 - Integration with additional Fortran standards and keywords.
-- Improved snippet support for common Fortran constructs.
+- Support for semantic highlighting and Language Server Protocol (LSP).
 - Enhanced debugging capabilities for Fortran code.
 
 

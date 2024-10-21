@@ -3,10 +3,13 @@
   "displayName": "Fortrant",
   "icon": "resources/icons/fortran-icon.png",
   "description": "Syntax highlighting plugin for fortran.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   
   "engines": { "vscode": "^1.94.0" },
-  "categories": [ "Programming Languages" ],
+  "categories": [ 
+    "Programming Languages",
+    "Snippets"
+  ],
 
   "readme": "README.md",
   "license": "MIT",
@@ -37,6 +40,13 @@
         "language": "fortran",
         "scopeName": "source.fortran",
         "path": "./syntaxes/fortran.tmLanguage.json"
+      }
+    ],
+
+    "snippets": [
+      {
+        "language": "fortran",
+        "path": "./snippets/fortran.snippets.json"
       }
     ]
   },

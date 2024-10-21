@@ -1,0 +1,733 @@
+{
+    "Fortran Assign": {
+        "prefix": "assign",
+        "body": [ "assign ${1:label} to ${2:variable}" ],
+        "description": "Fortran ASSIGN statement"
+    },
+
+    "Fortran Backspace": {
+        "prefix": "backspace",
+        "body": [ "backspace(${1:unit})" ],
+        "description": "Fortran BACKSPACE statement"
+    },
+
+    "Fortran Block Data": {
+        "prefix": "blockdata",
+        "body": [
+            "block data ${1:name}",
+            "    ${0}",
+            "end block data ${1:name}"
+        ],
+        "description": "Fortran BLOCK DATA statement"
+    },
+
+    "Fortran Call": {
+        "prefix": "call",
+        "body": [ "call ${1:subroutine_name}(${2:args})" ],
+        "description": "Fortran CALL statement"
+    },
+
+    "Fortran Close": {
+        "prefix": "close",
+        "body": [ "close(${1:unit})" ],
+        "description": "Fortran CLOSE statement"
+    },
+
+    "Fortran Common": {
+        "prefix": "common",
+        "body": [ "common /${1:block_name}/ ${2:variables}" ],
+        "description": "Fortran COMMON block"
+    },
+
+    "Fortran Continue": {
+        "prefix": "continue",
+        "body": [ "continue" ],
+        "description": "Fortran CONTINUE statement"
+    },
+
+    "Fortran Data": {
+        "prefix": "data",
+        "body": [ "data ${1:variables} /${2:values}/" ],
+        "description": "Fortran DATA statement"
+    },
+    
+    "Fortran Dimension": {
+        "prefix": "dimension",
+        "body": [ "dimension ${1:array_name}(${2:sizes})" ],
+        "description": "Fortran DIMENSION statement"
+    },
+    
+    "Fortran Do": {
+        "prefix": "do",
+        "body": [
+            "do ${1:variable} = ${2:start}, ${3:end}, ${4:step}",
+            "    ${0}",
+            "end do"
+        ],
+        "description": "Fortran DO loop"
+    },
+    
+    "Fortran Else": {
+        "prefix": "else",
+        "body": [
+            "else",
+            "    ${0}"
+        ],
+        "description": "Fortran ELSE statement"
+    },
+
+    "Fortran Else If": {
+        "prefix": "elseif",
+        "body": [
+            "else if (${1:condition}) then",
+            "    ${0}"
+        ],
+        "description": "Fortran ELSE IF statement"
+    },
+
+    "Fortran End": {
+        "prefix": "end",
+        "body": [ "end" ],
+        "description": "Fortran END statement"
+    },
+
+    "Fortran Endfile": {
+        "prefix": "endfile",
+        "body": [ "endfile(${1:unit})" ],
+        "description": "Fortran ENDFILE statement"
+    },
+
+    "Fortran Endif": {
+        "prefix": "endif",
+        "body": [ "endif" ],
+        "description": "Fortran END IF statement"
+    },
+
+    "Fortran Entry": {
+        "prefix": "entry",
+        "body": [ "entry ${1:entry_name}(${2:args})" ],
+        "description": "Fortran ENTRY statement"
+    },
+
+    "Fortran Equivalence": {
+        "prefix": "equivalence",
+        "body": [ "equivalence (${1:variable_list})" ],
+        "description": "Fortran EQUIVALENCE statement"
+    },
+
+    "Fortran External": {
+        "prefix": "external",
+        "body": [ "external ${1:procedure_names}" ],
+        "description": "Fortran EXTERNAL statement"
+    },
+
+    "Fortran Format": {
+        "prefix": "format",
+        "body": [ "format(${1:format_specifications})" ],
+        "description": "Fortran FORMAT statement"
+    },
+
+    "Fortran Function": {
+        "prefix": "function",
+        "body": [
+            "function ${1:function_name}(${2:args})",
+            "    ${0}",
+            "end function ${1:function_name}"
+        ],
+        "description": "Fortran FUNCTION statement"
+    },
+
+    "Fortran Goto": {
+        "prefix": "goto",
+        "body": [ "goto ${1:label}" ],
+        "description": "Fortran GOTO statement"
+    },
+
+    "Fortran If": {
+        "prefix": "if",
+        "body": [
+            "if (${1:condition}) then",
+            "    ${0}",
+            "end if"
+        ],
+        "description": "Fortran IF statement"
+    },
+
+    "Fortran Implicit": {
+        "prefix": "implicit",
+        "body": [ "implicit ${1:none|type}" ],
+        "description": "Fortran IMPLICIT statement"
+    },
+
+    "Fortran Inquire": {
+        "prefix": "inquire",
+        "body": [ "inquire(${1:unit}, ${2:status_variable})" ],
+        "description": "Fortran INQUIRE statement"
+    },
+
+    "Fortran Intrinsic": {
+        "prefix": "intrinsic",
+        "body": [ "intrinsic ${1:functions}" ],
+        "description": "Fortran INTRINSIC statement"
+    },
+
+    "Fortran Open": {
+        "prefix": "open",
+        "body": [ "open(${1:unit}, file='${2:filename}')" ],
+        "description": "Fortran OPEN statement"
+    },
+
+    "Fortran Parameter": {
+        "prefix": "parameter",
+        "body": [ "parameter (${1:constants})" ],
+        "description": "Fortran PARAMETER statement"
+    },
+
+    "Fortran Pause": {
+        "prefix": "pause",
+        "body": [ "pause '${1:message}'" ],
+        "description": "Fortran PAUSE statement"
+    },
+
+    "Fortran Print": {
+        "prefix": "print",
+        "body": [ "print *, ${1:variables}" ],
+        "description": "Fortran PRINT statement"
+    },
+
+    "Fortran Program": {
+        "prefix": "program",
+        "body": [
+            "program ${1:program_name}",
+            "    ${0}",
+            "end program ${1:program_name}"
+        ],
+        "description": "Fortran PROGRAM statement"
+    },
+
+    "Fortran Read": {
+        "prefix": "read",
+        "body": [ "read(${1:unit}, ${2:format}) ${3:variables}" ],
+        "description": "Fortran READ statement"
+    },
+
+    "Fortran Return": {
+        "prefix": "return",
+        "body": [ "return" ],
+        "description": "Fortran RETURN statement"
+    },
+
+    "Fortran Rewind": {
+        "prefix": "rewind",
+        "body": [ "rewind(${1:unit})" ],
+        "description": "Fortran REWIND statement"
+    },
+
+    "Fortran Rewrite": {
+        "prefix": "rewrite",
+        "body": [ "rewrite(${1:unit})" ],
+        "description": "Fortran REWRITE statement"
+    },
+
+    "Fortran Save": {
+        "prefix": "save",
+        "body": [ "save ${1:variables}" ],
+        "description": "Fortran SAVE statement"
+    },
+
+    "Fortran Stop": {
+        "prefix": "stop",
+        "body": [ "stop" ],
+        "description": "Fortran STOP statement"
+    },
+
+    "Fortran Subroutine": {
+        "prefix": "subroutine",
+        "body": [
+            "subroutine ${1:subroutine_name}(${2:args})",
+            "    ${0}",
+            "end subroutine ${1:subroutine_name}"
+        ],
+        "description": "Fortran SUBROUTINE statement"
+    },
+
+    "Fortran Then": {
+        "prefix": "then",
+        "body": [ "then" ],
+        "description": "Fortran THEN statement"
+    },
+
+    "Fortran Write": {
+        "prefix": "write",
+        "body": [ "write(${1:unit}, ${2:format}) ${3:variables}" ],
+        "description": "Fortran WRITE statement"
+    },
+
+    "Fortran Allocatable": {
+        "prefix": "allocatable",
+        "body": [ "allocatable ${1:array_name}(:)" ],
+        "description": "Fortran ALLOCATABLE attribute"
+    },
+
+    "Fortran Allocate": {
+        "prefix": "allocate",
+        "body": [ "allocate(${1:array_name}(${2:sizes}))" ],
+        "description": "Fortran ALLOCATE statement"
+    },
+
+    "Fortran Case": {
+        "prefix": "case",
+        "body": [ "case (${1:value})" ],
+        "description": "Fortran CASE statement"
+    },
+
+    "Fortran Contains": {
+        "prefix": "contains",
+        "body": [ "contains" ],
+        "description": "Fortran CONTAINS statement"
+    },
+
+    "Fortran Cycle": {
+        "prefix": "cycle",
+        "body": [ "cycle" ],
+        "description": "Fortran CYCLE statement"
+    },
+
+    "Fortran Deallocate": {
+        "prefix": "deallocate",
+        "body": [ "deallocate(${1:array_name})" ],
+        "description": "Fortran DEALLOCATE statement"
+    },
+
+    "Fortran Elsewhere": {
+        "prefix": "elsewhere",
+        "body": [ "elsewhere" ],
+        "description": "Fortran ELSEWHERE statement"
+    },
+
+    "Fortran Exit": {
+        "prefix": "exit",
+        "body": [ "exit" ],
+        "description": "Fortran EXIT statement"
+    },
+
+    "Fortran Include": {
+        "prefix": "include",
+        "body": [ "include '${1:filename}'" ],
+        "description": "Fortran INCLUDE statement"
+    },
+
+    "Fortran Interface": {
+        "prefix": "interface",
+        "body": [
+            "interface",
+            "    ${1:procedure_declaration}",
+            "end interface"
+        ],
+        "description": "Fortran INTERFACE block"
+    },
+    
+    "Fortran Intent": {
+        "prefix": "intent",
+        "body": [ "intent(${1:in|out|inout}) :: ${2:variable}" ],
+        "description": "Fortran INTENT attribute"
+    },
+
+    "Fortran Module": {
+        "prefix": "module",
+        "body": [
+            "module ${1:module_name}",
+            "    ${0}",
+            "end module ${1:module_name}"
+        ],
+        "description": "Fortran MODULE statement"
+    },
+
+    "Namelist": {
+        "prefix": "namelist",
+        "body": [ "namelist /${1:namelist_name}/ ${2:variables}" ],
+        "description": "Fortran NAMELIST statement"
+    },
+
+    "Fortran Nullify": {
+        "prefix": "nullify",
+        "body": [ "nullify(${1:pointer_variable})" ],
+        "description": "Fortran NULLIFY statement"
+    },
+
+    "Fortran Only": {
+        "prefix": "only",
+        "body": [ "only :: ${1:functions}" ],
+        "description": "Fortran ONLY clause"
+    },
+
+    "Fortran Operator": {
+        "prefix": "operator",
+        "body": [ "operator (${1:operator_name})" ],
+        "description": "Fortran OPERATOR declaration"
+    },
+
+    "Fortran Optional": {
+        "prefix": "optional",
+        "body": [ "optional :: ${1:argument_name}" ],
+        "description": "Fortran OPTIONAL attribute"
+    },
+
+    "Fortran Pointer": {
+        "prefix": "pointer",
+        "body": [ "pointer :: ${1:pointer_variable}" ],
+        "description": "Fortran POINTER attribute"
+    },
+
+    "Fortran Private": {
+        "prefix": "private",
+        "body": [ "private :: ${1:variables}" ],
+        "description": "Fortran PRIVATE access attribute"
+    },
+
+    "Fortran Procedure": {
+        "prefix": "procedure",
+        "body": [ "procedure(${1:procedure_name}) :: ${2:variable_name}" ],
+        "description": "Fortran PROCEDURE attribute"
+    },
+
+    "Fortran Public": {
+        "prefix": "public",
+        "body": [ "public :: ${1:variables}" ],
+        "description": "Fortran PUBLIC access attribute"
+    },
+
+    "Fortran Recursive": {
+        "prefix": "recursive",
+        "body": [ "recursive" ],
+        "description": "Fortran RECURSIVE attribute"
+    },
+
+    "Fortran Result": {
+        "prefix": "result",
+        "body": [ "result(${1:result_variable})" ],
+        "description": "Fortran RESULT attribute"
+    },
+
+    "Fortran Select": {
+        "prefix": "select",
+        "body": [ "select case (${1:variable})" ],
+        "description": "Fortran SELECT CASE statement"
+    },
+
+    "Fortran Sequence": {
+        "prefix": "sequence",
+        "body": [ "sequence" ],
+        "description": "Fortran SEQUENCE attribute"
+    },
+
+    "Fortran Target": {
+        "prefix": "target",
+        "body": [ "target :: ${1:pointer_variable}" ],
+        "description": "Fortran TARGET attribute"
+    },
+
+    "Fortran Use": {
+        "prefix": "use",
+        "body": [ "use ${1:module_name}" ],
+        "description": "Fortran USE statement"
+    },
+
+    "Fortran While": {
+        "prefix": "while",
+        "body": [
+            "do while (${1:condition})",
+            "    ${0}",
+            "end do"
+        ],
+        "description": "Fortran DO WHILE loop"
+    },
+
+    "Fortran Where": {
+        "prefix": "where",
+        "body": [
+            "where (${1:condition})",
+            "    ${0}",
+            "end where"
+        ],
+        "description": "Fortran WHERE statement"
+    },
+
+    "Fortran Elemental": {
+        "prefix": "elemental",
+        "body": [
+            "elemental function ${1:function_name}(${2:args})",
+            "    ${0}",
+            "end function ${1:function_name}"
+        ],
+        "description": "Fortran ELEMENTAL attribute"
+    },
+
+    "Fortran Forall": {
+        "prefix": "forall",
+        "body": [ "forall (${1:indices}) ${2:expression}" ],
+        "description": "Fortran FORALL statement"
+    },
+
+    "Fortran Pure": {
+        "prefix": "pure",
+        "body": [
+            "pure function ${1:function_name}(${2:args})",
+            "    ${0}",
+            "end function ${1:function_name}"
+        ],
+        "description": "Fortran PURE attribute"
+    },
+
+    "Fortran Abstract": {
+        "prefix": "abstract",
+        "body": [
+            "abstract class ${1:class_name}",
+            "    ${0}",
+            "end class ${1:class_name}"
+        ],
+        "description": "Fortran ABSTRACT class"
+    },
+    
+    "Fortran Associate": {
+        "prefix": "associate",
+        "body": [
+            "associate (${1:variable} => ${2:expression})",
+            "    ${0}",
+            "end associate"
+        ],
+        "description": "Fortran ASSOCIATE statement"
+    },
+
+    "Fortran Asynchronous": {
+        "prefix": "asynchronous",
+        "body": [ "asynchronous :: ${1:variable}" ],
+        "description": "Fortran ASYNCHRONOUS attribute"
+    },
+    
+    "Fortran Bind": {
+        "prefix": "bind",
+        "body": [ "bind(${1:attribute})" ],
+        "description": "Fortran BIND attribute"
+    },
+
+    "Fortran Class": {
+        "prefix": "class",
+        "body": [ "class(${1:type_name}), allocatable :: ${2:variable}" ],
+        "description": "Fortran CLASS type"
+    },
+
+    "Fortran Deferred": {
+        "prefix": "deferred",
+        "body": [ "deferred procedure :: ${1:procedure_name}" ],
+        "description": "Fortran DEFERRED attribute"
+    },
+
+    "Fortran Enum": {
+        "prefix": "enum",
+        "body": [
+            "enum :: ${1:enum_name}",
+            "    ${2:enumerators}",
+            "end enum"
+        ],
+        "description": "Fortran ENUM block"
+    },
+
+    "Fortran Enumerator": {
+        "prefix": "enumerator",
+        "body": [ "${1:enumerator_name} = ${2:value}" ],
+        "description": "Fortran ENUMERATOR declaration"
+    },
+
+    "Fortran Extends": {
+        "prefix": "extends",
+        "body": [ "class(${1:superclass_name}), extends :: ${2:subclass_name}" ],
+        "description": "Fortran EXTENDS class"
+    },
+
+    "Fortran Final": {
+        "prefix": "final",
+        "body": [ "final :: ${1:procedure_name}" ],
+        "description": "Fortran FINAL attribute"
+    },
+
+    "Fortran Flush": {
+        "prefix": "flush",
+        "body": [ "flush(${1:unit})" ],
+        "description": "Fortran FLUSH statement"
+    },
+
+    "Fortran Generic": {
+        "prefix": "generic",
+        "body": [ "generic :: ${1:generic_name} => ${2:specific_procedure}" ],
+        "description": "Fortran GENERIC declaration"
+    },
+
+    "Fortran Import": {
+        "prefix": "import",
+        "body": [ "import :: ${1:procedure_names}" ],
+        "description": "Fortran IMPORT statement in interfaces"
+    },
+
+    "Fortran Non Overridable": {
+        "prefix": "non_overridable",
+        "body": [ "non_overridable :: ${1:procedure_name}" ],
+        "description": "Fortran NON_OVERRIDABLE attribute"
+    },
+
+    "Fortran Nopass": {
+        "prefix": "nopass",
+        "body": [ "nopass :: ${1:argument_name}" ],
+        "description": "Fortran NOPASS attribute"
+    },
+
+    "Fortran Pass": {
+        "prefix": "pass",
+        "body": [ "pass :: ${1:argument_name}" ],
+        "description": "Fortran PASS attribute"
+    },
+    "Fortran Protected": {
+        "prefix": "protected",
+        "body": [ "protected :: ${1:variables}" ],
+        "description": "Fortran PROTECTED access attribute"
+    },
+
+    "Fortran Value": {
+        "prefix": "value",
+        "body": [ "value :: ${1:argument_name}" ],
+        "description": "Fortran VALUE attribute"
+    },
+
+    "Fortran Volatile": {
+        "prefix": "volatile",
+        "body": [ "volatile :: ${1:variable}" ],
+        "description": "Fortran VOLATILE attribute"
+    },
+
+    "Fortran Wait": {
+        "prefix": "wait",
+        "body": [ "wait(${1:unit})" ],
+        "description": "Fortran WAIT statement"
+    },
+
+    "Fortran Block": {
+        "prefix": "block",
+        "body": [
+            "block",
+            "    ${0}",
+            "end block"
+        ],
+        "description": "Fortran BLOCK statement"
+    },
+
+    "Fortran Codimension": {
+        "prefix": "codimension",
+        "body": [ "codimension(${1:dimensions})" ],
+        "description": "Fortran CODIMENSION attribute"
+    },
+
+    "Fortran Do Concurrent": {
+        "prefix": "do concurrent",
+        "body": [
+            "do concurrent (${1:variable} = ${2:start}:${3:end})",
+            "    ${0}",
+            "end do"
+        ],
+        "description": "Fortran DO CONCURRENT loop"
+    },
+
+    "Fortran Contiguous": {
+        "prefix": "contiguous",
+        "body": [ "contiguous :: ${1:array_name}" ],
+        "description": "Fortran CONTIGUOUS attribute"
+    },
+
+    "Fortran Critical": {
+        "prefix": "critical",
+        "body": [
+            "critical ${1:region_name}",
+            "    ${0}",
+            "end critical"
+        ],
+        "description": "Fortran CRITICAL region"
+    },
+
+    "Fortran Error Stop": {
+        "prefix": "error stop",
+        "body": [ "error stop '${1:error_message}'" ],
+        "description": "Fortran ERROR STOP statement"
+    },
+
+    "Fortran Submodule": {
+        "prefix": "submodule",
+        "body": [
+            "submodule (${1:module_name}) ${2:submodule_name}",
+            "    ${0}",
+            "end submodule ${2:submodule_name}"
+        ],
+        "description": "Fortran SUBMODULE declaration"
+    },
+
+    "Fortran Sync All": {
+        "prefix": "sync all",
+        "body": [ "sync all" ],
+        "description": "Fortran SYNC ALL statement"
+    },
+
+    "Fortran Sync Images": {
+        "prefix": "sync images",
+        "body": [ "sync images" ],
+        "description": "Fortran SYNC IMAGES statement"
+    },
+
+    "Fortran Sync Memory": {
+        "prefix": "sync memory",
+        "body": [ "sync memory" ],
+        "description": "Fortran SYNC MEMORY statement"
+    },
+
+    "Fortran Lock": {
+        "prefix": "lock",
+        "body": [ "lock(${1:lock_variable})" ],
+        "description": "Fortran LOCK statement"
+    },
+
+    "Fortran Unlock": {
+        "prefix": "unlock",
+        "body": [ "unlock(${1:lock_variable})" ],
+        "description": "Fortran UNLOCK statement"
+    },
+
+    "Fortran Impure": {
+        "prefix": "impure",
+        "body": [
+            "impure function ${1:function_name}(${2:args})",
+            "    ${0}",
+            "end function ${1:function_name}"
+        ],
+        "description": "Fortran IMPURE attribute"
+    },
+
+    "Fortran Select Rank": {
+        "prefix": "select rank",
+        "body": [
+            "select rank(${1:variable})",
+            "    case(1)",
+            "        ${2:action1}",
+            "    case(2)",
+            "        ${3:action2}",
+            "    case(3)",
+            "        ${4:action3}",
+            "    case default",
+            "        ${0}",
+            "end select"
+        ],
+        "description": "Fortran SELECT RANK statement"
+    },
+
+    "Fortran Non Recursive": {
+        "prefix": "non_recursive",
+        "body": [ "non_recursive procedure :: ${1:procedure_name}" ],
+        "description": "Fortran NON_RECURSIVE attribute"
+    }
+}

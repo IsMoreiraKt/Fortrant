@@ -1,12 +1,16 @@
 {
   "name": "fortrant",
   "displayName": "Fortrant",
+  "icon": "resources/icons/fortran-icon.png",
   "description": "Syntax highlighting plugin for fortran.",
   "version": "0.0.1",
   
   "engines": { "vscode": "^1.94.0" },
   "categories": [ "Programming Languages" ],
-  
+
+  "readme": "README.md",
+  "license": "MIT",
+
   "contributes": {
     "languages": [
       {

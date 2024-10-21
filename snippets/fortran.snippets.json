@@ -477,5 +477,136 @@
             "end function ${1:function_name}"
         ],
         "description": "Fortran PURE attribute"
+    },
+
+    "Fortran Abstract": {
+        "prefix": "abstract",
+        "body": [
+            "abstract class ${1:class_name}",
+            "    ${0}",
+            "end class ${1:class_name}"
+        ],
+        "description": "Fortran ABSTRACT class"
+    },
+    
+    "Fortran Associate": {
+        "prefix": "associate",
+        "body": [
+            "associate (${1:variable} => ${2:expression})",
+            "    ${0}",
+            "end associate"
+        ],
+        "description": "Fortran ASSOCIATE statement"
+    },
+
+    "Fortran Asynchronous": {
+        "prefix": "asynchronous",
+        "body": [ "asynchronous :: ${1:variable}" ],
+        "description": "Fortran ASYNCHRONOUS attribute"
+    },
+    
+    "Fortran Bind": {
+        "prefix": "bind",
+        "body": [ "bind(${1:attribute})" ],
+        "description": "Fortran BIND attribute"
+    },
+
+    "Fortran Class": {
+        "prefix": "class",
+        "body": [ "class(${1:type_name}), allocatable :: ${2:variable}" ],
+        "description": "Fortran CLASS type"
+    },
+
+    "Fortran Deferred": {
+        "prefix": "deferred",
+        "body": [ "deferred procedure :: ${1:procedure_name}" ],
+        "description": "Fortran DEFERRED attribute"
+    },
+
+    "Fortran Enum": {
+        "prefix": "enum",
+        "body": [
+            "enum :: ${1:enum_name}",
+            "    ${2:enumerators}",
+            "end enum"
+        ],
+        "description": "Fortran ENUM block"
+    },
+
+    "Fortran Enumerator": {
+        "prefix": "enumerator",
+        "body": [ "${1:enumerator_name} = ${2:value}" ],
+        "description": "Fortran ENUMERATOR declaration"
+    },
+
+    "Fortran Extends": {
+        "prefix": "extends",
+        "body": [ "class(${1:superclass_name}), extends :: ${2:subclass_name}" ],
+        "description": "Fortran EXTENDS class"
+    },
+
+    "Fortran Final": {
+        "prefix": "final",
+        "body": [ "final :: ${1:procedure_name}" ],
+        "description": "Fortran FINAL attribute"
+    },
+
+    "Fortran Flush": {
+        "prefix": "flush",
+        "body": [ "flush(${1:unit})" ],
+        "description": "Fortran FLUSH statement"
+    },
+
+    "Fortran Generic": {
+        "prefix": "generic",
+        "body": [ "generic :: ${1:generic_name} => ${2:specific_procedure}" ],
+        "description": "Fortran GENERIC declaration"
+    },
+
+    "Fortran Import": {
+        "prefix": "import",
+        "body": [ "import :: ${1:procedure_names}" ],
+        "description": "Fortran IMPORT statement in interfaces"
+    },
+
+    "Fortran Non Overridable": {
+        "prefix": "non_overridable",
+        "body": [ "non_overridable :: ${1:procedure_name}" ],
+        "description": "Fortran NON_OVERRIDABLE attribute"
+    },
+
+    "Fortran Nopass": {
+        "prefix": "nopass",
+        "body": [ "nopass :: ${1:argument_name}" ],
+        "description": "Fortran NOPASS attribute"
+    },
+
+    "Fortran Pass": {
+        "prefix": "pass",
+        "body": [ "pass :: ${1:argument_name}" ],
+        "description": "Fortran PASS attribute"
+    },
+    "Fortran Protected": {
+        "prefix": "protected",
+        "body": [ "protected :: ${1:variables}" ],
+        "description": "Fortran PROTECTED access attribute"
+    },
+
+    "Fortran Value": {
+        "prefix": "value",
+        "body": [ "value :: ${1:argument_name}" ],
+        "description": "Fortran VALUE attribute"
+    },
+
+    "Fortran Volatile": {
+        "prefix": "volatile",
+        "body": [ "volatile :: ${1:variable}" ],
+        "description": "Fortran VOLATILE attribute"
+    },
+
+    "Fortran Wait": {
+        "prefix": "wait",
+        "body": [ "wait(${1:unit})" ],
+        "description": "Fortran WAIT statement"
     }
 }

@@ -47,7 +47,7 @@
 
 	"flowControl": {
 	  "name": "keyword.control.flow.fortran",
-	  "match": "\\b(?:do|if|then|else|elseif|enddo|endif|goto|assign|continue|return|stop|cycle|exit|select case|select rank|end select|while|end while|end|case|elsewhere|where)\\b"
+	  "match": "\\b(?:do|if|then|else|elseif|enddo|endif|goto|assign|continue|return|stop|cycle|exit|select case|select rank|end select|while|end while|end|case|elsewhere|where|forall)\\b"
 	},
 
 	"procedures": {

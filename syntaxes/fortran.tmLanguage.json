@@ -47,22 +47,22 @@
 
 	"flowControl": {
 	  "name": "keyword.control.flow.fortran",
-	  "match": "\\b(?:do|if|then|else|elseif|enddo|endif|goto|assign|continue|return|stop|cycle|exit|select case|select rank|end select|while|end while|end)\\b"
+	  "match": "\\b(?:do|if|then|else|elseif|enddo|endif|goto|assign|continue|return|stop|cycle|exit|select case|select rank|end select|while|end while|end|case|elsewhere|where)\\b"
 	},
 
 	"procedures": {
 	  "name": "keyword.control.procedures.fortran",
-	  "match": "\\b(?:program|end program|subroutine|end subroutine|function|end function|module|end module|contains|interface|procedure|elemental|pure|recursive|result|bind|block data|call|entry)\\b"
+	  "match": "\\b(?:program|end program|subroutine|end subroutine|function|end function|module|end module|contains|interface|procedure|elemental|pure|recursive|result|bind|block data|call|entry|use|only)\\b"
 	},
 
 	"declarations": {
 	  "name": "keyword.declaration.fortran",
-	  "match": "\\b(?:implicit|none|parameter|allocate|deallocate|common|equivalence|data|dimension|intent|optional|private|public|save|target|allocatable|pointer|protected|external|intrinsic)\\b"
+	  "match": "\\b(?:implicit|none|parameter|allocate|deallocate|common|equivalence|data|dimension|intent|optional|private|public|save|target|allocatable|pointer|protected|external|intrinsic|nullify|namelist|sequence)\\b"
 	},
 
 	"inputOutput": {
 	  "name": "keyword.io.fortran",
-	  "match": "\\b(?:open|close|read|write|print|backspace|endfile|rewind|inquire|flush|format|pause|rewrite)\\b"
+	  "match": "\\b(?:open|close|read|write|print|backspace|endfile|rewind|inquire|flush|format|pause|rewrite|include)\\b"
 	},
 
     "types": {
@@ -73,6 +73,11 @@
 	"operators": {
 	  "name": "keyword.operator.fortran",
 	  "match": "[+*/%-<=>&|^!~]"
+	},
+
+	"operators_keyword": {
+	  "name": "keyword.declaration.operator.fortran",
+	  "match": "\\b(?:operator)\\b"
 	},
 
 	"array": {
@@ -122,7 +127,8 @@
 		{"include": "#declarations"},
 		{"include": "#inputOutput"},
 		{"include": "#types"},
-		{"include": "#operators"}
+		{"include": "#operators"},
+		{"include": "#operators_keyword"}
 	  ]
 	}
   }

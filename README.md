@@ -1,7 +1,7 @@
 # Fortrant | Fortran Support Plugin
 
 <img 
-    src="./resources/icons/fortran-icon.png" 
+    src="https://github.com/IsMoreiraKt/fortrant/blob/b778968cb1ce8e374ba1699ce50d7f04ae80da6a/resources/icons/fortran-icon.png"
     alt="project-logo" 
     width="300px" 
     align="right"

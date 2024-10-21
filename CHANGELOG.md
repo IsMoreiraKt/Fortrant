@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.0.2] - 2024-10-21
+#### Added
+- Snippet support for common Fortran constructs.
+- Enhanced syntax highlighting for additional Fortran keywords and types.
+
+#### Changed
+- Syntax corrections in the definition of keywords and operators to improve parsing.
+- Removal of unnecessary patterns to optimize grammar.
+
+#### Upcoming Features
+- Integration with additional Fortran standards and keywords.
+- Support for semantic highlighting and Language Server Protocol (LSP).
+
+<br><hr><br>
+
 ## [0.0.1] - 2024-10-21
 #### Added
 - Initial release of the Fortran plugin for VSCode.

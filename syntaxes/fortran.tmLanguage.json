@@ -57,7 +57,7 @@
 
 	"declarations": {
 	  "name": "keyword.declaration.fortran",
-	  "match": "\\b(?:implicit|none|parameter|allocate|deallocate|common|equivalence|data|dimension|intent|optional|private|public|save|target|allocatable|pointer|protected|external|intrinsic|nullify|namelist|sequence|abstract|asynchronous|deferred|enumerator|extends|final|generic|non_overridable|nopass|pass|value|volatile|block)\\b"
+	  "match": "\\b(?:non_recursive|implicit|none|parameter|allocate|deallocate|common|equivalence|data|dimension|intent|optional|private|public|save|target|allocatable|pointer|protected|external|intrinsic|nullify|namelist|sequence|abstract|asynchronous|deferred|enumerator|extends|final|generic|non_overridable|nopass|pass|value|volatile|block)\\b"
 	},
 
 	"inputOutput": {

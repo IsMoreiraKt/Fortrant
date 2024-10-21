@@ -28,5 +28,21 @@
         "path": "./syntaxes/fortran.tmLanguage.json"
       }
     ]
+  },
+
+  "author": {
+    "name": "Ismael Moreira",
+    "email": "ismaelmoreirakt@gmail.com",
+    "url": "https://github.com/IsMoreiraKt"
+  },
+  "publisher": "IsMoreiraKt",
+  "homepage": "https://github.com/IsMoreiraKt/fortrant",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IsMoreiraKt/fortrant"
+  },
+  "bugs": {
+    "email": "ismaelmoreirakt@gmail.com",
+    "url": "https://github.com/IsMoreiraKt/fortrant/issues"
   }
 }

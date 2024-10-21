@@ -16,11 +16,18 @@
       {
         "id": "fortran",
         "aliases": ["Fortran", "fortran"],
+        
         "extensions": [
           ".f", ".for", ".f90",
           ".f95", ".f03", ".f08",
           ".f2018", ".p", ".include"
         ],
+        
+        "icon": { 
+          "dark": "resources/icons/fortran-icon.png",
+          "light": "resources/icons/fortran-icon.png"
+        },
+
         "configuration": "./language-configuration.json"
       }
     ],

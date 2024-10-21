@@ -2,5 +2,128 @@
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
   
   "name": "Fortran",
-  "scopeName": "source.fortran"
+  "scopeName": "source.fortran",
+
+  "patterns": [{"include": "#value"}],
+
+  "repository": {
+	"comments": {
+	  "patterns": [{
+		"name": "comment.line.exclamation.fortran",
+		"begin": "!",
+		"end": "$"
+	  }]
+	},
+
+	"constant": {
+	  "name": "constant.language.fortran",
+	  "match": "\\b(?:true|false|null|T|F)\\b"
+	},
+
+	"number": {
+	  "name": "constant.numeric.fortran",
+	  "match": "(?x)\n  -?\n  (?:\n    0\n    |[1-9]\\d*\n  )\n  (?:\n    (?:\n      \\.\\d+\n    )?\n    (?:\n      [eE][+-]?\\d+\n    )?\n  )?"
+	},
+
+	"string": {
+	  "name": "string.quoted.double.fortran",
+	  "begin": "\"",
+	  "end": "\"",
+	  "patterns": [{
+		"name": "constant.character.escape.fortran",
+		"match": "\\\\."
+	  }]
+	},
+
+	"singleQuoteString": {
+	  "name": "string.quoted.single.fortran",
+	  "begin": "'",
+	  "end": "'",
+	  "patterns": [{
+		"name": "constant.character.escape.fortran",
+		"match": "\\\\."
+	  }]
+	},
+
+	"flowControl": {
+	  "name": "keyword.control.flow.fortran",
+	  "match": "\\b(?:do|if|then|else|elseif|enddo|endif|goto|continue|return|stop|cycle|exit|select case|select rank|end select|while|end while)\\b"
+	},
+
+	"procedures": {
+	  "name": "keyword.control.procedures.fortran",
+	  "match": "\\b(?:program|end program|subroutine|end subroutine|function|end function|module|end module|contains|interface|procedure|elemental|pure|recursive|result|bind)\\b"
+	},
+
+	"declarations": {
+	  "name": "keyword.declaration.fortran",
+	  "match": "\\b(?:implicit|none|parameter|allocate|deallocate|common|equivalence|data|dimension|intent|optional|private|public|save|target|allocatable|pointer|protected)\\b"
+	},
+
+	"inputOutput": {
+	  "name": "keyword.io.fortran",
+	  "match": "\\b(?:open|close|read|write|print|backspace|endfile|rewind|inquire|flush)\\b"
+	},
+
+	"types": {
+	  "name": "storage.type.fortran",
+	  "match": "\\b(?:integer|real|double precision|character|logical|complex|class|type|enum|bind)\\b"
+	},
+
+	"operators": {
+	  "name": "keyword.operator.fortran",
+	  "match": "[+*/%-<=>&|^!~]"
+	},
+
+	"array": {
+	  "name": "meta.structure.array.fortran",
+	  
+	  "begin": "\\[",
+	  "beginCaptures": {
+		"0": {
+		  "name": "punctuation.definition.array.begin.fortran"
+		}
+	  },
+
+	  "end": "\\]",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.array.end.fortran"
+        }
+      },
+
+	  "patterns": [
+		{
+		  "include": "#value"
+		},
+		
+		{
+		  "name": "punctuation.separator.array.fortran",
+		  "match": ","
+		},
+
+		{
+		  "name": "invalid.illegal.expected-array-separator.fortran",
+		  "match": "[^\\s\\]]"
+		}
+	  ]
+	},
+
+	"value": {
+	  "patterns": [
+		{"include": "#constant"},
+		{"include": "#number"},
+		{"include": "#string"},
+		{"include": "#singleQuoteString"},
+		{"include": "#array"},
+		{"include": "#comments"},
+		{"include": "#flowControl"},
+		{"include": "#procedures"},
+		{"include": "#declarations"},
+		{"include": "#inputOutput"},
+		{"include": "#types"},
+		{"include": "#operators"}
+	  ]
+	}
+  }
 }

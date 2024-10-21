@@ -3,7 +3,7 @@
   "displayName": "Fortrant",
   "icon": "resources/icons/fortran-icon.png",
   "description": "Syntax highlighting plugin for fortran.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   
   "engines": { "vscode": "^1.94.0" },
   "categories": [ 
@@ -46,7 +46,7 @@
     "snippets": [
       {
         "language": "fortran",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/fortran.snippets.json"
       }
     ]
   },

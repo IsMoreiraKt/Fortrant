@@ -608,5 +608,103 @@
         "prefix": "wait",
         "body": [ "wait(${1:unit})" ],
         "description": "Fortran WAIT statement"
-    }
+    },
+
+    "Fortran Block": {
+        "prefix": "block",
+        "body": [
+            "block",
+            "    ${0}",
+            "end block"
+        ],
+        "description": "Fortran BLOCK statement"
+    },
+
+    "Fortran Codimension": {
+        "prefix": "codimension",
+        "body": [ "codimension(${1:dimensions})" ],
+        "description": "Fortran CODIMENSION attribute"
+    },
+
+    "Fortran Do Concurrent": {
+        "prefix": "do concurrent",
+        "body": [
+            "do concurrent (${1:variable} = ${2:start}:${3:end})",
+            "    ${0}",
+            "end do"
+        ],
+        "description": "Fortran DO CONCURRENT loop"
+    },
+
+    "Fortran Contiguous": {
+        "prefix": "contiguous",
+        "body": [ "contiguous :: ${1:array_name}" ],
+        "description": "Fortran CONTIGUOUS attribute"
+    },
+
+    "Fortran Critical": {
+        "prefix": "critical",
+        "body": [
+            "critical ${1:region_name}",
+            "    ${0}",
+            "end critical"
+        ],
+        "description": "Fortran CRITICAL region"
+    },
+
+    "Fortran Error Stop": {
+        "prefix": "error stop",
+        "body": [ "error stop '${1:error_message}'" ],
+        "description": "Fortran ERROR STOP statement"
+    },
+
+    "Fortran Submodule": {
+        "prefix": "submodule",
+        "body": [
+            "submodule (${1:module_name}) ${2:submodule_name}",
+            "    ${0}",
+            "end submodule ${2:submodule_name}"
+        ],
+        "description": "Fortran SUBMODULE declaration"
+    },
+
+    "Fortran Sync All": {
+        "prefix": "sync all",
+        "body": [ "sync all" ],
+        "description": "Fortran SYNC ALL statement"
+    },
+
+    "Fortran Sync Images": {
+        "prefix": "sync images",
+        "body": [ "sync images" ],
+        "description": "Fortran SYNC IMAGES statement"
+    },
+
+    "Fortran Sync Memory": {
+        "prefix": "sync memory",
+        "body": [ "sync memory" ],
+        "description": "Fortran SYNC MEMORY statement"
+    },
+
+    "Fortran Lock": {
+        "prefix": "lock",
+        "body": [ "lock(${1:lock_variable})" ],
+        "description": "Fortran LOCK statement"
+    },
+
+    "Fortran Unlock": {
+        "prefix": "unlock",
+        "body": [ "unlock(${1:lock_variable})" ],
+        "description": "Fortran UNLOCK statement"
+    },
+
+    "Fortran Impure": {
+        "prefix": "impure",
+        "body": [
+            "impure function ${1:function_name}(${2:args})",
+            "    ${0}",
+            "end function ${1:function_name}"
+        ],
+        "description": "Fortran IMPURE attribute"
+    },
 }

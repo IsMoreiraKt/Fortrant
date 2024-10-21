@@ -451,5 +451,31 @@
             "end where"
         ],
         "description": "Fortran WHERE statement"
+    },
+
+    "Fortran Elemental": {
+        "prefix": "elemental",
+        "body": [
+            "elemental function ${1:function_name}(${2:args})",
+            "    ${0}",
+            "end function ${1:function_name}"
+        ],
+        "description": "Fortran ELEMENTAL attribute"
+    },
+
+    "Fortran Forall": {
+        "prefix": "forall",
+        "body": [ "forall (${1:indices}) ${2:expression}" ],
+        "description": "Fortran FORALL statement"
+    },
+
+    "Fortran Pure": {
+        "prefix": "pure",
+        "body": [
+            "pure function ${1:function_name}(${2:args})",
+            "    ${0}",
+            "end function ${1:function_name}"
+        ],
+        "description": "Fortran PURE attribute"
     }
 }

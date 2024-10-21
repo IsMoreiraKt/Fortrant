@@ -707,4 +707,27 @@
         ],
         "description": "Fortran IMPURE attribute"
     },
+
+    "Fortran Select Rank": {
+        "prefix": "select rank",
+        "body": [
+            "select rank(${1:variable})",
+            "    case(1)",
+            "        ${2:action1}",
+            "    case(2)",
+            "        ${3:action2}",
+            "    case(3)",
+            "        ${4:action3}",
+            "    case default",
+            "        ${0}",
+            "end select"
+        ],
+        "description": "Fortran SELECT RANK statement"
+    },
+
+    "Fortran Non Recursive": {
+        "prefix": "non_recursive",
+        "body": [ "non_recursive procedure :: ${1:procedure_name}" ],
+        "description": "Fortran NON_RECURSIVE attribute"
+    }
 }

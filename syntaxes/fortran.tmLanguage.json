@@ -47,22 +47,22 @@
 
 	"flowControl": {
 	  "name": "keyword.control.flow.fortran",
-	  "match": "\\b(?:do|if|then|else|elseif|enddo|endif|goto|assign|continue|return|stop|cycle|exit|select case|select rank|end select|while|end while|end|case|elsewhere|where|forall)\\b"
+	  "match": "\\b(?:do|if|then|else|elseif|enddo|endif|goto|assign|continue|return|stop|cycle|exit|select case|select rank|end select|while|end while|end|case|elsewhere|where|forall|associate)\\b"
 	},
 
 	"procedures": {
 	  "name": "keyword.control.procedures.fortran",
-	  "match": "\\b(?:program|end program|subroutine|end subroutine|function|end function|module|end module|contains|interface|procedure|elemental|pure|recursive|result|bind|block data|call|entry|use|only)\\b"
+	  "match": "\\b(?:program|end program|subroutine|end subroutine|function|end function|module|end module|contains|interface|procedure|elemental|pure|recursive|result|bind|block data|call|entry|use|only|import)\\b"
 	},
 
 	"declarations": {
 	  "name": "keyword.declaration.fortran",
-	  "match": "\\b(?:implicit|none|parameter|allocate|deallocate|common|equivalence|data|dimension|intent|optional|private|public|save|target|allocatable|pointer|protected|external|intrinsic|nullify|namelist|sequence)\\b"
+	  "match": "\\b(?:implicit|none|parameter|allocate|deallocate|common|equivalence|data|dimension|intent|optional|private|public|save|target|allocatable|pointer|protected|external|intrinsic|nullify|namelist|sequence|abstract|asynchronous|deferred|enumerator|extends|final|generic|non_overridable|nopass|pass|value|volatile)\\b"
 	},
 
 	"inputOutput": {
 	  "name": "keyword.io.fortran",
-	  "match": "\\b(?:open|close|read|write|print|backspace|endfile|rewind|inquire|flush|format|pause|rewrite|include)\\b"
+	  "match": "\\b(?:open|close|read|write|print|backspace|endfile|rewind|inquire|flush|format|pause|rewrite|include|wait)\\b"
 	},
 
     "types": {

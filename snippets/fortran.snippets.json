@@ -261,5 +261,195 @@
         "prefix": "write",
         "body": [ "write(${1:unit}, ${2:format}) ${3:variables}" ],
         "description": "Fortran WRITE statement"
+    },
+
+    "Fortran Allocatable": {
+        "prefix": "allocatable",
+        "body": [ "allocatable ${1:array_name}(:)" ],
+        "description": "Fortran ALLOCATABLE attribute"
+    },
+
+    "Fortran Allocate": {
+        "prefix": "allocate",
+        "body": [ "allocate(${1:array_name}(${2:sizes}))" ],
+        "description": "Fortran ALLOCATE statement"
+    },
+
+    "Fortran Case": {
+        "prefix": "case",
+        "body": [ "case (${1:value})" ],
+        "description": "Fortran CASE statement"
+    },
+
+    "Fortran Contains": {
+        "prefix": "contains",
+        "body": [ "contains" ],
+        "description": "Fortran CONTAINS statement"
+    },
+
+    "Fortran Cycle": {
+        "prefix": "cycle",
+        "body": [ "cycle" ],
+        "description": "Fortran CYCLE statement"
+    },
+
+    "Fortran Deallocate": {
+        "prefix": "deallocate",
+        "body": [ "deallocate(${1:array_name})" ],
+        "description": "Fortran DEALLOCATE statement"
+    },
+
+    "Fortran Elsewhere": {
+        "prefix": "elsewhere",
+        "body": [ "elsewhere" ],
+        "description": "Fortran ELSEWHERE statement"
+    },
+
+    "Fortran Exit": {
+        "prefix": "exit",
+        "body": [ "exit" ],
+        "description": "Fortran EXIT statement"
+    },
+
+    "Fortran Include": {
+        "prefix": "include",
+        "body": [ "include '${1:filename}'" ],
+        "description": "Fortran INCLUDE statement"
+    },
+
+    "Fortran Interface": {
+        "prefix": "interface",
+        "body": [
+            "interface",
+            "    ${1:procedure_declaration}",
+            "end interface"
+        ],
+        "description": "Fortran INTERFACE block"
+    },
+    
+    "Fortran Intent": {
+        "prefix": "intent",
+        "body": [ "intent(${1:in|out|inout}) :: ${2:variable}" ],
+        "description": "Fortran INTENT attribute"
+    },
+
+    "Fortran Module": {
+        "prefix": "module",
+        "body": [
+            "module ${1:module_name}",
+            "    ${0}",
+            "end module ${1:module_name}"
+        ],
+        "description": "Fortran MODULE statement"
+    },
+
+    "Namelist": {
+        "prefix": "namelist",
+        "body": [ "namelist /${1:namelist_name}/ ${2:variables}" ],
+        "description": "Fortran NAMELIST statement"
+    },
+
+    "Fortran Nullify": {
+        "prefix": "nullify",
+        "body": [ "nullify(${1:pointer_variable})" ],
+        "description": "Fortran NULLIFY statement"
+    },
+
+    "Fortran Only": {
+        "prefix": "only",
+        "body": [ "only :: ${1:functions}" ],
+        "description": "Fortran ONLY clause"
+    },
+
+    "Fortran Operator": {
+        "prefix": "operator",
+        "body": [ "operator (${1:operator_name})" ],
+        "description": "Fortran OPERATOR declaration"
+    },
+
+    "Fortran Optional": {
+        "prefix": "optional",
+        "body": [ "optional :: ${1:argument_name}" ],
+        "description": "Fortran OPTIONAL attribute"
+    },
+
+    "Fortran Pointer": {
+        "prefix": "pointer",
+        "body": [ "pointer :: ${1:pointer_variable}" ],
+        "description": "Fortran POINTER attribute"
+    },
+
+    "Fortran Private": {
+        "prefix": "private",
+        "body": [ "private :: ${1:variables}" ],
+        "description": "Fortran PRIVATE access attribute"
+    },
+
+    "Fortran Procedure": {
+        "prefix": "procedure",
+        "body": [ "procedure(${1:procedure_name}) :: ${2:variable_name}" ],
+        "description": "Fortran PROCEDURE attribute"
+    },
+
+    "Fortran Public": {
+        "prefix": "public",
+        "body": [ "public :: ${1:variables}" ],
+        "description": "Fortran PUBLIC access attribute"
+    },
+
+    "Fortran Recursive": {
+        "prefix": "recursive",
+        "body": [ "recursive" ],
+        "description": "Fortran RECURSIVE attribute"
+    },
+
+    "Fortran Result": {
+        "prefix": "result",
+        "body": [ "result(${1:result_variable})" ],
+        "description": "Fortran RESULT attribute"
+    },
+
+    "Fortran Select": {
+        "prefix": "select",
+        "body": [ "select case (${1:variable})" ],
+        "description": "Fortran SELECT CASE statement"
+    },
+
+    "Fortran Sequence": {
+        "prefix": "sequence",
+        "body": [ "sequence" ],
+        "description": "Fortran SEQUENCE attribute"
+    },
+
+    "Fortran Target": {
+        "prefix": "target",
+        "body": [ "target :: ${1:pointer_variable}" ],
+        "description": "Fortran TARGET attribute"
+    },
+
+    "Fortran Use": {
+        "prefix": "use",
+        "body": [ "use ${1:module_name}" ],
+        "description": "Fortran USE statement"
+    },
+
+    "Fortran While": {
+        "prefix": "while",
+        "body": [
+            "do while (${1:condition})",
+            "    ${0}",
+            "end do"
+        ],
+        "description": "Fortran DO WHILE loop"
+    },
+
+    "Fortran Where": {
+        "prefix": "where",
+        "body": [
+            "where (${1:condition})",
+            "    ${0}",
+            "end where"
+        ],
+        "description": "Fortran WHERE statement"
     }
 }

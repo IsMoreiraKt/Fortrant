@@ -1,0 +1,25 @@
+{
+  "name": "fortrant",
+  "displayName": "Fortrant",
+  "description": "Syntax highlighting plugin for fortran.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "fortran",
+      "aliases": ["Fortran", "fortran"],
+      "extensions": [".f",".for",".f90",".f95",".f03",".f08",".f2018",".p",".include"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "fortran",
+      "scopeName": "source.fortran",
+      "path": "./syntaxes/fortran.tmLanguage.json"
+    }]
+  }
+}
